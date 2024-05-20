@@ -15,4 +15,5 @@ test:
 
 production:
   <<: *default
+  username: '<%= ENV['DATABASE_USERNAME'] %>'
   url: <%= ENV['DATABASE_URL'] %>
